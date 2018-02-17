@@ -1,0 +1,235 @@
+$grey-separator: #CCC
+$rhythm: #767B91
+$gunmetal: #2A324B
+
+* 
+  margin: 0
+  padding: 0
+  background: #FFF
+  box-sizing: border-box
+  font-family: 'Allerta', sans-serif
+
+h1
+  padding: 15px 15px 10px 15px
+  font-size: 50px
+  text-align: center
+  
+a
+  text-decoration: none
+  font-weight: bold
+  color: $gunmetal
+  
+  &:hover
+    text-decoration: underline
+  
+ul
+  list-style-type: none
+  
+.fa
+  font-size: 24px
+  
+.attribution-link, .search-input-box, .no-results-found, .list-title
+  text-align: center
+  
+.filter-and-search-container
+  max-width: 1300px
+  display: flex
+  align-items: flex-start
+  margin: 80px auto
+  
+.search-form
+  display: flex
+  width: 45%
+  padding: 0 30px
+  
+.search-input-box
+  width: 300px
+  display: flex
+  padding: 0px 10px
+  margin: 0 15px
+  border: 1px solid
+  
+.search-input
+  width: 100%
+  font-size: 14px 
+  border: none
+  outline: none 
+  
+.clear-btn
+  display: none
+  cursor: pointer
+  margin: 5px 0
+  
+.no-results-found
+  display: none
+  padding: 30px 
+  font-size: 28px
+  font-weight: bold
+  color: darkred
+  
+.list-title
+  padding-bottom: 20px
+  font-size: 20px
+  
+.main-container 
+  max-width: 1300px
+  display: flex 
+  margin: 0 auto
+  border-left: 1px solid $grey-separator
+  border-right: 1px solid $grey-separator
+  
+.all-articles-container  
+  width: 75%
+  margin: 0 20px
+  
+.articles-list
+  display: flex
+  flex-flow: row wrap  
+  
+.article-box 
+  width: 25%
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 10px
+  color: #767B91
+
+.article-img, .article-author, .article-title
+  margin-bottom: 10px
+ 
+.article-author, .article-description
+  font-size: 14px
+  word-wrap: break-word
+  
+.article-img
+  min-height: 100px
+  max-height: 150px
+  background-color: $gunmetal
+  
+  
+.article-title
+  font-size: 16px
+ 
+.article-share-box
+  margin: 10px 0
+
+.share-btn
+  padding-right: 10px
+
+.fa-facebook-square
+  color: #4D67A5
+  
+.fa-twitter-square
+  color: #489FEB
+  
+.read-later-container
+  width: 25%
+  display: flex
+  flex-direction: column
+  padding: 0 15px
+  border-left: 1px solid $grey-separator
+  
+.read-later-btn
+  position: absolute
+  top: 16px
+  right: 16px
+  color: #FFF
+  background-color: transparent
+  text-shadow: 0 1px 5px $rhythm
+  cursor: pointer
+  
+.read-later-article
+  width: 100%
+   
+.is-visible
+  display: block
+  
+.filter-box
+  position: relative
+  height: 36px
+  
+.dropdown-btn
+  max-width: 300px
+  font-size: 14px
+  border: 1px solid #000
+  border-radius: 0
+  padding: 1px 10px
+  height: 36px
+  
+  &:after
+    content: '\25be'
+  
+.dropdown-list
+  display: none
+  position: absolute
+  top: 35px
+  left: 0
+  list-style-type: none
+  width: 300px
+  max-height: 350px
+  overflow: auto
+  white-space: nowrap
+  border: 1px solid #000
+  padding: 0 15px
+  z-index: 2
+  
+  .option
+    display: flex
+    align-items: center
+    height: 90px
+    padding: 10px
+    border-top: 1px solid $gunmetal
+    cursor: pointer
+    
+    &:hover
+      span
+        color: #000
+        font-weight: bold
+      
+    &:first-child
+      border-top: 0  
+    
+.option  
+  font-size: 14px
+  color: $gunmetal
+     
+.logo
+  display: block
+  width: 100%
+  max-width: 70px
+  max-height: 70px
+  margin-right: 25px
+  
+.chosen-filters 
+  width: 55%
+  
+  .option
+    display: inline-block
+    position: relative
+    padding: 0 15px
+    margin-right: 35px
+    text-align: center
+    
+  .logo
+    margin-bottom: 10px
+    margin-right: auto
+    margin-left: auto
+  
+.inactive
+  pointer-events: none
+  color: #ccc
+  cursor: not-allowed
+  
+  .logo
+    opacity: .5
+      
+.remove-btn
+  position: absolute
+  top: -10px
+  right: -10px
+  background: transparent
+  cursor: pointer
+  
+  &:hover
+    color: #000
+  

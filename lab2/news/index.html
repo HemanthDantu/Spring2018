@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>News Watch</title>
+  <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+<script src="https://use.fontawesome.com/2c991efdbc.js"></script>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>News at a Glance</h1>
+
+<div class='filter-and-search-container'>
+  <form class='search-form'>
+    <div class='filter-box'>
+      <button class='dropdown-btn selected'>News source </button>
+      <ul class='dropdown-list'>
+        <li class='option' data-source='bbc-news'>
+          <img class='logo' src='https://s1.postimg.org/1lvflfwru7/Bbc-_News-flat-circle-256.png'>
+          <span>BBC News</span>    
+        </li>
+        <li class='option' data-source='cnn'>
+          <img class='logo' src='https://s1.postimg.org/4xncpo2f3j/Cnn-_Metro-256.png'>
+          <span>CNN</span>       
+        </li>
+        <li class='option' data-source='independent'>
+          <img class='logo' src='https://s1.postimg.org/5ny7pzu7v3/the-independent-logo-88_EED36301-seeklogo.com.png'>
+          <span>Independent</span>  
+        </li>
+        <li class='option' data-source='newsweek'>
+          <img class='logo' src='https://s1.postimg.org/5rul1vuvfj/Newsweek-logo-_FC4_E8_F4_C49-seeklogo.com.png'>
+          <span>Newsweek</span> 
+        </li>
+        <li class='option' data-source='the-economist'>
+          <img class='logo' src='https://s1.postimg.org/96umngtkbj/the-economist-logo-_D59_A848_A12-seeklogo.com.png'>
+          <span>the Economist</span> 
+        </li>
+        <li class='option' data-source='the-guardian-uk'>
+          <img class='logo' src='https://s1.postimg.org/846esxo4b3/Guardian-flat-circle-256.png'>
+          <span>the Guardian UK</span>
+        </li>
+        <li class='option' data-source='the-new-york-times'>
+          <img class='logo' src='https://s1.postimg.org/3hxj6f0kyn/New-_York-_Times-_Metro-256.png'>
+          <span>the New York Times</span> 
+        </li>
+        <li class='option' data-source='time'>
+          <img class='logo' src='https://s1.postimg.org/16nzlvzuz3/Time-logo-0206_ACAA61-seeklogo.com.png'>
+          <span>Time</span>  
+        </li>
+        <li class='option' data-source='buzzfeed'>
+          <img class='logo' src='https://s1.postimg.org/8firefoxn3/Buzzfeed3-256.png'>
+          <span>BuzzFeed</span>
+        </li>
+        <li class='option' data-source='mirror'>
+          <img class='logo' src='https://s1.postimg.org/9pe0xu96fj/untitled-1_21.jpg'>
+          <span>Mirror</span>
+        </li>
+        <li class='option' data-source='the-telegraph'>
+          <img class='logo' src='https://seeklogo.com/images/T/the-daily-telegraph-logo-6D2DE16411-seeklogo.com.png'>
+          <span>the Telegraph</span>
+        </li>
+        <li class='option' data-source='the-washington-post'>
+          <img class='logo' src='https://s1.postimg.org/6v71qxva4v/The_Washington_Post-logo-1_D6_A09_EF22-seeklogo.com.png'>
+          <span>the Washington Post</span>
+        </li>
+        <li class='option' data-source='national-geographic'>
+          <img class='logo' src='https://s1.postimg.org/31mj2ijvkf/National_Geographic-logo-_A43277202_F-seeklogo.com.png'>
+          <span>National Geographic</span>
+        </li>
+       </ul>
+    </div>
+    <span class='search-input-box'>
+      <input placeholder='Search' class='search-input'></input>
+      <i class='fa fa-times-circle clear-btn' aria-hidden='true'></i>
+    </span> 
+  </form>
+  <ul class='chosen-filters'></ul>
+</div>
+  
+<div class='main-container'>
+  <div class='all-articles-container'>
+    <p class='list-title'>All articles</p>
+    <p class='no-results-found'>Sorry, no matched results found.</p>
+    <div class='articles-list'></div>
+  </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
