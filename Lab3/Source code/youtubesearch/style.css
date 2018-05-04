@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+form,#results{padding: 20px 40px; }
+.btn-primary{background: red  }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus
+.btn-primary{
+    align-items: center;
+
+}
+body{
+    background-color: lemonchiffon;
+}
